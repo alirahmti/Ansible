@@ -1,0 +1,42 @@
+# In the first step, we need to create the project file (.yml)
+- name: ------- create project.yml file ---------
+  file:
+       path: "{{ansible_root}}/{{project_name}}.yml"
+       state: touch
+  tags: [create_playbook_yml]
+
+# In the second step, we need to create the project directory
+- name: ------ create project directory -------
+  file:
+        path: "{{ansible_root}}/roles/{{project_name}}"
+        state: directory
+  tags: [create_main_playbook_dir]
+
+ # In the third step, we create seven directories that are the playbook structure
+- name: ------ create seven directories -------
+  file:
+        path: "{{ansible_root}}/roles/{{project_name}}/{{item}}"
+        state: directory
+  loop:
+        - meta
+        - vars
+        - defaults
+        - handlers 
+        - tasks
+        - files
+        - templates
+  tags: [create_seven_directory]
+
+# In the fourth step, main.yml should be created in five directories.
+# The templates directory is for the config files and the files directory is for the files that are going to be placed in the destination 
+- name: ----- create main.yml -------
+  file:
+        path: "{{ansible_root}}/roles/{{project_name}}/{{item}}/main.yml"
+        state: touch
+  loop:
+        - vars
+        - defaults
+        - meta
+        - tasks
+        - handlers
+  tags: [create_main_yml]
