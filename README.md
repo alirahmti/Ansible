@@ -9,7 +9,7 @@ It is primarily used for:
 
 Ansible works by using **Playbooks**, written in YAML, and **Modules** to automate tasks. One of its best features is that it doesn't require agents to be installed on the target machines — it simply uses SSH to communicate with the nodes. 🚀
 
----
+
 
 ## 🛠 Prerequisites
 
@@ -18,7 +18,7 @@ Before we begin, ensure you have the following:
 - **Internet Access** 🌍
 - **Root or Sudo Access** 👨‍💻
 
----
+ 
 
 ## 📦 Installation Steps for Ansible
 
@@ -81,7 +81,7 @@ ansible 2.x.x
   python version = 3.x.x (default, ...)
 ```
 
----
+ 
 
 ## ✅ Test Ansible Installation
 
@@ -117,13 +117,13 @@ pong
 
 This confirms that Ansible can successfully communicate with the local machine.
 
----
+ 
 
 ## 🎉 You're Ready to Use Ansible!
 
 Now that you’ve installed and verified Ansible, you can start using it to automate tasks on your systems. Enjoy automating! ⚡
 
----
+ 
 
 ## 🔗 Helpful Links
 
@@ -134,8 +134,7 @@ Now that you’ve installed and verified Ansible, you can start using it to auto
 Happy automating! 😎
 
 
-
-
-## **Author** ✍️
-
-Created by [Ali Rahmati](https://github.com/alirahmti). If you find this repository helpful, feel free to fork it or contribute!
+> ## 📝 About the Author
+> #### Crafted with care and ❤️ by [Ali Rahmati](https://github.com/alirahmti). 👨‍💻
+> If this repo saved you time or solved a problem, a ⭐ means everything in the DevOps world. 🧠💾
+> Your star ⭐ is like a high five from the terminal — thanks for the support! 🙌🐧
